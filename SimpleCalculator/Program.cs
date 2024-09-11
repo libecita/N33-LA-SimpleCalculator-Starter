@@ -26,6 +26,7 @@ namespace SimpleCalculator
             {
                 // Normally, we'd log this error to a file.
                 Console.WriteLine(ex.Message);
+                Console.WriteLine("Hi.");
             }
 
         }
