@@ -9,8 +9,10 @@ namespace SimpleCalculator
             try
             {
                 // Class to convert user input
+                // TODO : could be removed if only created to access the now static method ConvertInputToNumeric?
                 InputConverter inputConverter = new InputConverter();
 
+                /*
                 double firstNb = GetValidNumber("Enter the first number: ");
                 double secondNb = GetValidNumber("Enter the first number: ");
 
@@ -43,12 +45,13 @@ namespace SimpleCalculator
 
                     Console.WriteLine(sb.ToString());
                 }
+                */
 
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
-                double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
-                double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 string operation = Console.ReadLine();
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
