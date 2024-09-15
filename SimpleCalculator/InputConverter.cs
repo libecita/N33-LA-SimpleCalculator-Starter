@@ -9,6 +9,32 @@ namespace SimpleCalculator
         {
             return 0;
         }
-        
+
+        public String GetValidOperator(String prompt)
+        {
+            // TODO
+            return "";
+        }
+
+        public double GetValidNumber(string prompt)
+        {
+            bool invalid = true;
+            while (invalid)
+            {
+                Console.Write(prompt);
+                String input = Console.Read();
+                double inputConverted;
+                if (double.TryParse(input, out inputConverted))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("That's not a valid number. Please enter another one: ");
+                }
+            }
+            // TODO
+            return 0;
+        }
     }
 }

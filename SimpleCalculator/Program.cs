@@ -12,7 +12,8 @@ namespace SimpleCalculator
                 // TODO : could be removed if only created to access the now static method ConvertInputToNumeric?
                 InputConverter inputConverter = new InputConverter();
 
-                /*
+                //*
+                /*/
                 double firstNb = GetValidNumber("Enter the first number: ");
                 double secondNb = GetValidNumber("Enter the first number: ");
 
@@ -44,8 +45,8 @@ namespace SimpleCalculator
                         firstNb, secondNb, result);
 
                     Console.WriteLine(sb.ToString());
-                }
-                */
+                }  
+                //*/
 
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
