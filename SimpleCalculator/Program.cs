@@ -12,13 +12,22 @@ namespace SimpleCalculator
                 // TODO : could be removed if only created to access the now static method ConvertInputToNumeric?
                 InputConverter inputConverter = new InputConverter();
 
-                //*
-                /*/
+                
+                
                 double firstNb = GetValidNumber("Enter the first number: ");
                 double secondNb = GetValidNumber("Enter the first number: ");
+                string operation GetValidOperator();
 
-                string GetValidOperator();
                 double result = PerformOperation(firstNb, secondNb, operation);
+
+
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("The value {0:F2} plus the value {1:F2} is equal to {2:F2}.",
+                                firstNb, secondNb, result);
+
+                    Console.WriteLine(sb.ToString());
+                /*
+                
 
                 Console.WriteLine($"Result: {result}");
 
@@ -39,12 +48,7 @@ namespace SimpleCalculator
                             Console.WriteLine("That's not a valid number. Please enter another one: ");
                         }
                     }
-                    StringBuilder sb = new StringBuilder();
-
-                    sb.AppendFormat("The value {0:F2} plus the value {1:F2} is equal to {2:F2}.",
-                        firstNb, secondNb, result);
-
-                    Console.WriteLine(sb.ToString());
+                    
                 }  
                 //*/
 
