@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CalculatorEngine">
-      <HintPath>..\..\..\CalculatorEngine\bin\Debug\CalculatorEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\OneDrive\Desktop\.NET\CalculatorEngine\CalculatorEngine\bin\Debug\CalculatorEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
