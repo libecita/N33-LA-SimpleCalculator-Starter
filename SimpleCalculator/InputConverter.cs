@@ -22,7 +22,7 @@ namespace SimpleCalculator
             while (invalid)
             {
                 Console.Write(prompt);
-                String input = Console.Read();
+                String input = Console.ReadLine();
                 double inputConverted;
                 if (double.TryParse(input, out inputConverted))
                 {
