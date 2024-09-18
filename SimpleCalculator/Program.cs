@@ -10,14 +10,11 @@ namespace SimpleCalculator
         {  // comment el
             try
             {
-                // Class to convert user input
-                // TODO : could be removed if only created to access the now static method ConvertInputToNumeric?
-
+                
                 Class1 calculatorEngine = new Class1();
                 
                 double firstNb = InputConverter.GetValidNumber("Enter the first number: ");
                 double secondNb = InputConverter.GetValidNumber("Enter the second number: ");
-                //string operation = ("Enter an operation to do: ");
                 string operation = Console.ReadLine();
                 double result = calculatorEngine.Calculate(operation, firstNb, secondNb);
 
@@ -27,22 +24,6 @@ namespace SimpleCalculator
                                 firstNb, secondNb, result);
 
                     Console.WriteLine(sb.ToString());
-                /*
-                
-
-                Console.WriteLine($"Result: {result}");
-
-               
-                //*/
-
-                // Class to perform actual calculations
-                
-
-                //double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
-                //double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
-               
-
-                //double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
                 
                 Console.WriteLine(result);
 
