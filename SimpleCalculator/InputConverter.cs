@@ -10,23 +10,18 @@ namespace SimpleCalculator
             return 0;
         }
 
-        public String GetValidOperator(String prompt)
-        {
-            // TODO
-            return "";
-        }
 
-        public double GetValidNumber(string prompt)
+        public static double GetValidNumber(string prompt)
         {
             bool invalid = true;
             while (invalid)
             {
                 Console.Write(prompt);
-                String input = Console.Read();
+                String input = Console.ReadLine();
                 double inputConverted;
                 if (double.TryParse(input, out inputConverted))
                 {
-                    break;
+                    return inputConverted;
                 }
                 else
                 {

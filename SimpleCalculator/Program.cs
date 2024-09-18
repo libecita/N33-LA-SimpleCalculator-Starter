@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace SimpleCalculator
 {
@@ -10,13 +11,12 @@ namespace SimpleCalculator
             {
                 // Class to convert user input
                 // TODO : could be removed if only created to access the now static method ConvertInputToNumeric?
-                InputConverter inputConverter = new InputConverter();
 
                 
                 
-                double firstNb = GetValidNumber("Enter the first number: ");
-                double secondNb = GetValidNumber("Enter the first number: ");
-                string operation GetValidOperator();
+                double firstNb = InputConverter.GetValidNumber("Enter the first number: ");
+                double secondNb = InputConverter.GetValidNumber("Enter the first number: ");
+                string operation = ("Enter an operation to do: ");
 
                 double result = PerformOperation(firstNb, secondNb, operation);
 
