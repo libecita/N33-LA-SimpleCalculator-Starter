@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CalculatorEngine">
-      <HintPath>..\..\..\..\..\..\source\repos\CalculatorEngine\CalculatorEngine\bin\Debug\net8.0\CalculatorEngine.dll</HintPath>
+      <HintPath>..\..\..\CalculatorEngine\bin\Debug\CalculatorEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
