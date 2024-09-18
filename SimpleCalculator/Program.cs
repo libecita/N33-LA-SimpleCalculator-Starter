@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using CalculatorEngine;
 
 namespace SimpleCalculator
 {
@@ -12,13 +13,13 @@ namespace SimpleCalculator
                 // Class to convert user input
                 // TODO : could be removed if only created to access the now static method ConvertInputToNumeric?
 
-                
+                Class1 calculatorEngine = new Class1();
                 
                 double firstNb = InputConverter.GetValidNumber("Enter the first number: ");
-                double secondNb = InputConverter.GetValidNumber("Enter the first number: ");
-                string operation = ("Enter an operation to do: ");
-
-                double result = CalculatorEngine.PerformOperation(firstNb, secondNb, operation);
+                double secondNb = InputConverter.GetValidNumber("Enter the second number: ");
+                //string operation = ("Enter an operation to do: ");
+                string operation = Console.ReadLine();
+                double result = calculatorEngine.Calculate(operation, firstNb, secondNb);
 
 
                 StringBuilder sb = new StringBuilder();
@@ -35,14 +36,14 @@ namespace SimpleCalculator
                 //*/
 
                 // Class to perform actual calculations
-                CalculatorEngine calculatorEngine = new CalculatorEngine();
+                
 
-                double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
-                double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
-                string operation = Console.ReadLine();
+                //double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                //double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+               
 
-                double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
-
+                //double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+                
                 Console.WriteLine(result);
 
             } catch (Exception ex)
