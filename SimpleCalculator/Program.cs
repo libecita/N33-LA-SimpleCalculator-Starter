@@ -18,7 +18,7 @@ namespace SimpleCalculator
                 double secondNb = InputConverter.GetValidNumber("Enter the first number: ");
                 string operation = ("Enter an operation to do: ");
 
-                double result = PerformOperation(firstNb, secondNb, operation);
+                double result = CalculatorEngine.PerformOperation(firstNb, secondNb, operation);
 
 
                 StringBuilder sb = new StringBuilder();
@@ -31,25 +31,7 @@ namespace SimpleCalculator
 
                 Console.WriteLine($"Result: {result}");
 
-                static double GetValidNumber(string prompt)
-                {
-                    double number;
-                    while (true)
-                    {
-                        Console.Write(prompt);
-                        string input = Console.ReadLine();
-
-                        if (double.TryParse(input, out number))
-                        {
-                            return number;
-                        }
-                        else
-                        {
-                            Console.WriteLine("That's not a valid number. Please enter another one: ");
-                        }
-                    }
-                    
-                }  
+               
                 //*/
 
                 // Class to perform actual calculations
