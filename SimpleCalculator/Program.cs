@@ -15,8 +15,16 @@ namespace SimpleCalculator
                 
                 double firstNb = InputConverter.GetValidNumber("Enter the first number: ");
                 double secondNb = InputConverter.GetValidNumber("Enter the second number: ");
+
+                // Prompt the user for the operation
+                Console.Write("Enter an operation (+, -, *, /): ");
                 string operation = Console.ReadLine();
+                
                 double result = calculatorEngine.Calculate(operation, firstNb, secondNb);
+
+              
+
+
 
 
                 StringBuilder sb = new StringBuilder();
@@ -26,6 +34,7 @@ namespace SimpleCalculator
                     Console.WriteLine(sb.ToString());
                 
                 Console.WriteLine(result);
+                Console.ReadLine();
 
             } catch (Exception ex)
             {
@@ -36,3 +45,10 @@ namespace SimpleCalculator
         }
     }
 }
+         
+             
+
+               
+   
+
+
