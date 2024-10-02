@@ -7,7 +7,7 @@ namespace SimpleCalculator
     {
         public static double ConvertInputToNumeric(string argTextInput)
         {
-            return 0;
+            return 3;
         }
 
 
@@ -31,5 +31,24 @@ namespace SimpleCalculator
             // TODO
             return 0;
         }
-    }
+        public static String getValidOperation(string ask)
+        {
+        
+            {
+                Console.Write(ask);
+                String input = Console.ReadLine();
+                String operationGiven = Console.ReadLine();
+
+
+                if (operationGiven == operation);
+                {
+                    return operationGiven;
+                }
+                else
+                {
+                    Console.WriteLine("That's not a valid operation. Please enter another one: ");
+                }
+                return "";
+            }
+        }
 }
