@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 using CalculatorEngine;
-
+ 
 namespace SimpleCalculator
 {
     class Program
@@ -18,8 +18,7 @@ namespace SimpleCalculator
                 double secondNb = InputConverter.GetValidNumber("Please enter the second number: ");
 
                 // Prompt the user for the operation
-                Console.Write("Enter an operation (+, -, *, /): ");
-                string operation = InputConverter.getValidOperation("Enter an operation (+, -, *, /)" );
+                string operation = InputConverter.GetValidOperation("Enter an operation (+, -, *, /) : " );
                   Console.ReadLine();
                 
                 double result = calculatorEngine.Calculate(operation, firstNb, secondNb);

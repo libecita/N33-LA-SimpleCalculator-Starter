@@ -31,24 +31,25 @@ namespace SimpleCalculator
             // TODO
             return 0;
         }
-        public static String getValidOperation(string ask)
+        public static String GetValidOperation(string ask)
         {
-        
-            {
+
+            
                 Console.Write(ask);
                 String input = Console.ReadLine();
                 String operationGiven = Console.ReadLine();
 
 
-                if (operationGiven == operation);
-                {
-                    return operationGiven;
-                }
-                else
-                {
-                    Console.WriteLine("That's not a valid operation. Please enter another one: ");
-                }
-                return "";
+            if (input != operationGiven)
+            {
+
+                Console.WriteLine("That's not a valid operation. Please enter another one: ");
+            }
+            else return operationGiven;
             }
         }
-}
+    }
+
+
+        
+
