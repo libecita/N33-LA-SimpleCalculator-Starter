@@ -10,7 +10,6 @@ namespace SimpleCalculator
         {  
             try
             {
-                
                 Class1 calculatorEngine = new Class1();
 
                 Console.Write("This is a lab 02 sample output from Elise, Lizbeth and Bianca \n");
@@ -20,7 +19,6 @@ namespace SimpleCalculator
 
                 // Prompt the user for the operation
                 string operation = InputConverter.GetvalidOperation("Enter an operation (+, -, *, /) : " );
-                  Console.ReadLine();
                 
                 double result = calculatorEngine.Calculate(operation, firstNb, secondNb);
 

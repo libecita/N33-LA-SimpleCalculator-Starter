@@ -52,23 +52,6 @@ namespace SimpleCalculator
             }
         }
 
-
-        //public static String GetValidOperation(string ask)
-        //{
-
-            
-        //        Console.Write(ask);
-        //        String input = Console.ReadLine();
-        //        String operationGiven = Console.ReadLine();
-
-
-        //    if (input != operationGiven)
-        //    {
-
-        //        Console.WriteLine("That's not a valid operation. Please enter another one: ");
-        //    }
-        //    else return operationGiven;
-        //    }
         }
     }
 
