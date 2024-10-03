@@ -12,13 +12,14 @@ namespace SimpleCalculator
             {
                 
                 Class1 calculatorEngine = new Class1();
+
                 Console.Write("This is a lab 02 sample output from Elise, Lizbeth and Bianca \n");
 
                 double firstNb = InputConverter.GetValidNumber("Please enter the first number: ");
                 double secondNb = InputConverter.GetValidNumber("Please enter the second number: ");
 
                 // Prompt the user for the operation
-                string operation = InputConverter.GetValidOperation("Enter an operation (+, -, *, /) : " );
+                string operation = InputConverter.GetvalidOperation("Enter an operation (+, -, *, /) : " );
                   Console.ReadLine();
                 
                 double result = calculatorEngine.Calculate(operation, firstNb, secondNb);

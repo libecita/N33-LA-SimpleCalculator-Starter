@@ -1,4 +1,5 @@
 ﻿using System;
+using CalculatorEngine;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace SimpleCalculator.Test.Unit
@@ -9,7 +10,7 @@ namespace SimpleCalculator.Test.Unit
         private readonly CalculatorEngine calculatorEngine = new CalculatorEngine();
 
         [TestMethod]
-        public void AddsTwoNumbersAndReturnsValidResultForNonSymbolOpertion()
+        public void AddsTwoNumbersAndReturnsValidResultForNonSymbolOperation()
         {
 
             int number1 = 1;
@@ -30,7 +31,7 @@ namespace SimpleCalculator.Test.Unit
 
         }
         [TestMethod]
-        public void SubsTwoNumbersAndReturnsValidResultForNonSymbolOpertion()
+        public void SubsTwoNumbersAndReturnsValidResultForNonSymbolOperation()
         {
 
             int number1 = 1;
@@ -41,7 +42,7 @@ namespace SimpleCalculator.Test.Unit
         }
 
         [TestMethod]
-        public void SubsTwoNumbersAndReturnsValidResultForSymbolOpertion()
+        public void SubsTwoNumbersAndReturnsValidResultForSymbolOperation()
         {
 
             int number1 = 1;
@@ -50,7 +51,7 @@ namespace SimpleCalculator.Test.Unit
             Assert.AreEqual(3, result);
         }
         [TestMethod]
-        public void DivsTwoNumbersAndReturnsValidResultForNonSymbolOpertion()
+        public void DivsTwoNumbersAndReturnsValidResultForNonSymbolOperation()
         {
 
             int number1 = 1;
@@ -60,7 +61,7 @@ namespace SimpleCalculator.Test.Unit
 
         }
         [TestMethod]
-        public void DivsTwoNumbersAndReturnsValidResultForSymbolOpertion()
+        public void DivsTwoNumbersAndReturnsValidResultForSymbolOperation()
         {
 
             int number1 = 1;
@@ -71,7 +72,7 @@ namespace SimpleCalculator.Test.Unit
 
       
 
-        public void MultTwoNumbersAndReturnsValidResultForNonSymbolOpertion()
+        public void MultTwoNumbersAndReturnsValidResultForNonSymbolOperation()
         {
 
             int number1 = 1;
@@ -82,7 +83,7 @@ namespace SimpleCalculator.Test.Unit
         }
 
         [TestMethod]
-        public void MultTwoNumbersAndReturnsValidResultForSymbolOpertion()
+        public void MultTwoNumbersAndReturnsValidResultForSymbolOperation()
         {
 
             int number1 = 1;

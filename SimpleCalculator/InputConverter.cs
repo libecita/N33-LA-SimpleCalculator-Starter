@@ -31,22 +31,44 @@ namespace SimpleCalculator
             // TODO
             return 0;
         }
-        public static String GetValidOperation(string ask)
+
+        public static string GetvalidOperation(string ask)
         {
+            string[] validOperations = { "+", "-", "*", "/" };
+
+            while (true)
+            {
+                Console.Write(ask);
+                string input = Console.ReadLine();
+
+                if (Array.Exists(validOperations, op => op == input))
+                {
+                    return input;
+                }
+                else
+                {
+                    Console.WriteLine("That's not a valid operation. Please enter another one.");
+                }
+            }
+        }
+
+
+        //public static String GetValidOperation(string ask)
+        //{
 
             
-                Console.Write(ask);
-                String input = Console.ReadLine();
-                String operationGiven = Console.ReadLine();
+        //        Console.Write(ask);
+        //        String input = Console.ReadLine();
+        //        String operationGiven = Console.ReadLine();
 
 
-            if (input != operationGiven)
-            {
+        //    if (input != operationGiven)
+        //    {
 
-                Console.WriteLine("That's not a valid operation. Please enter another one: ");
-            }
-            else return operationGiven;
-            }
+        //        Console.WriteLine("That's not a valid operation. Please enter another one: ");
+        //    }
+        //    else return operationGiven;
+        //    }
         }
     }
 
