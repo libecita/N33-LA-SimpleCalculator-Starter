@@ -91,5 +91,27 @@ namespace SimpleCalculator.Test.Unit
             double result = calculatorEngine.Calculate("*", number1 , number2);
             Assert.AreEqual(2, result);
         }
+
+        [TestMethod]
+        public void GetsRemainderFromTwoNumbersAndReturnsValidResultForNonSymbolOperation()
+        {
+
+            int number1 = 1;
+            int number2 = 2;
+            double result = calculatorEngine.Calculate("modulus", number1, number2);
+            Assert.AreEqual(3, result);
+
+        }
+
+        [TestMethod]
+        public void GetsRemainderFromTwoNumbersAndReturnsValidResultForSymbolOpertion()
+        {
+
+            int number1 = 1;
+            int number2 = 2;
+            double result = calculatorEngine.Calculate("%", number1, number2);
+            Assert.AreEqual(3, result);
+
+        }
     }
 }

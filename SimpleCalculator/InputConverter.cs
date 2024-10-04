@@ -34,7 +34,7 @@ namespace SimpleCalculator
 
         public static string GetvalidOperation(string ask)
         {
-            string[] validOperations = { "+", "-", "*", "/" };
+            string[] validOperations = { "+", "-", "*", "/", "%" };
 
             while (true)
             {
@@ -47,7 +47,7 @@ namespace SimpleCalculator
                 }
                 else
                 {
-                    Console.WriteLine("That's not a valid operation. Please enter another one.");
+                    Console.WriteLine("That's not a valid operation. Please enter another one. For example: + , -, *, /, %. ");
                 }
             }
         }
